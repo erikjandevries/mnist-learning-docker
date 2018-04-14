@@ -1,9 +1,9 @@
-from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+from keras.preprocessing.image import ImageDataGenerator
 
 from model import model
 
 
-def main(batch_size = 32):
+def main(batch_size=32):
     train_data_generator = ImageDataGenerator(
         rescale=1. / 255
     )
