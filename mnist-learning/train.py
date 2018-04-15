@@ -1,6 +1,6 @@
 from keras.preprocessing.image import ImageDataGenerator
 
-from model import model
+from model import get_model
 
 
 def main(batch_size=32):
@@ -27,8 +27,10 @@ def main(batch_size=32):
         class_mode='categorical'
     )
 
+    model = get_model(simple=False)
+    model.summary()
     model.fit_generator(
-        train_generator,
+        generator=train_generator,
         steps_per_epoch=60000 // batch_size,
         epochs=3,
         validation_data=validation_generator,
