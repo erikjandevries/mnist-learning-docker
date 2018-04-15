@@ -23,6 +23,7 @@ nvidia-docker run -it --rm \
 #    --env "DISPLAY" \
 #    --device /dev/dri:/dev/dri \
 #    --volume /home/erik/Repositories/GitHub/dl-breakout-docker/data:/repositories/breakout/data \
+#    -p 5000:5000 \
 #    ${docker_image_id} ${command}
 
 
