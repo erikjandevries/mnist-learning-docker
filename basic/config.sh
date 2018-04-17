@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker_image_name="mnist-learning"
+docker_image_name="mnist-learning-basic"
 docker_image_version="latest"
 docker_repository="erikjandevries"
 

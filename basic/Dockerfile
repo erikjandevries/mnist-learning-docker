@@ -12,7 +12,6 @@ RUN pip install --upgrade \
         pip \
         keras
 
-COPY prepare /repositories/prepare
 COPY mnist-learning /repositories/mnist-learning
 
 WORKDIR /repositories/mnist-learning
